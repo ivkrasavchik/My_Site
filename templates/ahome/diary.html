@@ -1,0 +1,40 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="diary_inner_block">
+            <div class="div_link" id="div-link-diary">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+                <div class="navi">
+{#                    {% if text.numer > 1 %}#}
+{#                    <h5 class="navi_chapter"><a class="link caveat" id="link-chapter-previous" href="{% url 'text' text.id text.numer 2 %}">-Prev</a> </h5>#}
+{#                    {% endif %}#}
+{#                    <h3 id="link-chapter-list-h3"><a class="link" id="link-chapter-list" href="{% url 'chapter' text.book.id %}">{{ text.numer }}. {{ text.name }}</a> </h3>#}
+{#                    {% if text.numer < max_pos %}#}
+{#                    <h5 class="navi_chapter"><a class="link caveat" id="link-chapter-Next" href="{% url 'text' text.id text.numer 1%}">Next+</a> </h5>#}
+{#                    {% endif %}#}
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4" id="diary-list-block">
+                    {% csrf_token %}
+                    {% for elem in dir %}
+                        <a class="div_link_list caveat" id="diary-title-link" href="javascript:"
+                                            data-id_diary="{{ elem.id }}"
+                                                            >{{ elem.created }} | {{ elem.short_description }}</a>
+                    {% endfor %}
+                </div>
+                <div class="col-8" id="diary-text-block">
+{#                    <p class="author_text" id="diary-description" style="word-break: break-all; color: #B29567; white-space: pre-wrap; padding: 1vw; font-size: 1.3rem">#}
+                    <p class="author_text" id="diary-description">
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock verse%}

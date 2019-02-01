@@ -1,0 +1,40 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="login_inner_block">
+            <div class="div_link" id="div-link-login">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+{#                <h2>{{ ver.name }}</h2>#}
+            </div>
+            <div id="div-login-description">
+            {% if user.username %}
+                <form action="{% url 'log_out' %}" method="post">{% csrf_token %}
+                    <h3>{{ user.username }}, <br><br>Вы хотите разлогиниться?</h3>
+                    <button class="my_btn" id="btn-log-in" type="submit">Выйти</button>
+                </form>
+            {% else %}
+                {% if form_in %}
+                    <form action="{% url 'ok_log' %}" method="post">{% csrf_token %}
+                        {{ form_in.as_p }}
+                        <button class="my_btn" id="btn-log-in" type="submit">Войти</button>
+                        <a class="link" id="link-log-on" href="{% url 'log_on' %}" >Регистрация</a>
+                    </form>
+                {% else %}
+                    <div class="errLog" id="err-login">
+                        <h3>{{ errorText }}</h3>
+                    </div>
+                    <div id="btn_reg_relog" class="row">
+                        <a id="btn-reg" class="my_btn col-5" href="{% url 'log_on' %}">Зарегистрироваться</a>
+                        <div class="col-2"></div>
+                        <a id="btn-relog" class="my_btn col-5" href="{% url 'log_in' %}">Попробывать еще раз</a>
+                    </div>
+
+                {% endif %}
+            {% endif %}
+            </div>
+
+        </div>
+    </div>
+{% endblock verse %}

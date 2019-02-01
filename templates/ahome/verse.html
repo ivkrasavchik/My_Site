@@ -1,0 +1,19 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="verse_inner_block">
+            <div class="div_link" id="div-link-verse">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+                <h2>{{ ver.name }}</h2>
+            </div>
+            <div id="div-verse-description">
+                <h5>{{ ver.short_description }}</h5>
+                <p class="author_text">
+                    {{ ver.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock verse %}

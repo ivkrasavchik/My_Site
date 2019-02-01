@@ -1,0 +1,29 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="verse_inner_block">
+            <div class="div_link" id="div-link-verse">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+                <div class="navi">
+                    {% if text.numer > 1 %}
+                    <h5 class="navi_chapter"><a class="link caveat" id="link-chapter-previous" href="{% url 'text' text.id text.numer 2 %}">-Prev</a> </h5>
+                    {% endif %}
+                    <h3 id="link-chapter-list-h3"><a class="link" id="link-chapter-list" href="{% url 'chapter' text.book.id %}">{{ text.numer }}. {{ text.name }}</a> </h3>
+                    {% if text.numer < max_pos %}
+                    <h5 class="navi_chapter"><a class="link caveat" id="link-chapter-Next" href="{% url 'text' text.id text.numer 1%}">Next+</a> </h5>
+                    {% endif %}
+
+                </div>
+
+            </div>
+            <div id="div-verse-description">
+                <h5>{{ text.short_description }}</h5>
+                <p class="author_text">
+                    {{ text.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock verse %}

@@ -1,0 +1,19 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="hidden_home_bloc">
+            <div class="div_link" id="div-link">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+                <h3 id="list-chapter" ><a class="link" href="{% url 'list_book'%}">{{ bk.name }}</a> </h3>
+{#                <h2 id="ttt">...</h2>#}
+            </div>
+                <div class="list_content">
+                    {% for elem in chap %}
+                        <a class="div_link_list caveat" href="{% url 'text' elem.id elem.numer 0%}">{{ elem.name }}, {{ elem.numer }}</a>
+                    {% endfor %}
+                </div>
+        </div>
+    </div>
+{% endblock verse %}

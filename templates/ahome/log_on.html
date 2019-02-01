@@ -1,0 +1,21 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="login_inner_block" id="logon-inner-block">
+        <div class="div_link" id="div-link-login">
+            <a class="link caveat close" id="close-verse" href="/">Close</a>
+        </div>
+        <div id="div-login-description">
+{#            <form action="{% url 'log_reg' %}" method="post">{% csrf_token %}#}
+              <form action="" method="post">{% csrf_token %}
+                {{ form_reg.as_p }}
+                <button class="my_btn" id="btn-log-on" type="submit">Зарегистрироваться</button>
+            </form>
+            <div id="err-text">{{ error_text }}</div>
+        </div>
+        </div>
+    </div>
+{% endblock verse %}
+
