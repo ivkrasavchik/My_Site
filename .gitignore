@@ -1,6 +1,7 @@
 .idea
 venv
-local_settings.py
+My_Site/settings.py
+settings.py
 __pycache__/
 */__pycahe__/
 *.py[cod]
