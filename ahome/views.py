@@ -10,6 +10,9 @@ from ahome.models import Verse, Book, Chapter, Diary
 
 def home(request):
     args = dict()
+    met = request.META['HTTP_USER_AGENT']
+
+    print(met)
     if auth.get_user(request).username != AnonymousUser.username:
         args['user'] = auth.get_user(request)
     args['verse'] = Verse.objects.all()

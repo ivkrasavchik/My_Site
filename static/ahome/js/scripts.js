@@ -1,3 +1,4 @@
+console.log(window.screen.width);
 
 jQuery(document).ready(function ($) {
     $('#project-link').click(show_projects);

@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+
 .caveat{
     font-family: 'Caveat', cursive;
 }
@@ -11,7 +12,9 @@ body{
     padding: 1vw;
     font-size: 1.3rem
 }
-
+#home-img{
+    display: none;
+}
 .link{
     text-decoration: none;
     color: darkorange;
@@ -24,19 +27,14 @@ body{
     text-decoration: none;
     color: chocolate;
 }
-/*.link:visited{*/
-    /*color: chocolate;*/
-/*}*/
 .my_btn{
     border: 1px darkorange solid;
-    border-radius: 5px;
+    border-radius: 27px;
     text-decoration: none;
     color: darkorange;
-    padding: 0.4vw 1vw 0.4vw 1vw;
+    padding: 1vw 4vw 1vw 4vw;
     text-align: center;
-    font-size: 0.8vw;
-    /*margin-right: 1vw;*/
-    /*background-color: #5f2424;*/
+    font-size: 6.8vw;
     background-color: transparent;
 }
 .my_btn:hover{
@@ -49,103 +47,88 @@ body{
     color: darkorange;
     min-height: 100vh;
 }
-#home-img{
-    min-width: 100vw;
-    max-width: 100vw;
-}
 .main-home{
     position: absolute;
-    top: 0;
-    left: 0;
+    /*top: 0;*/
+    /*left: 0;*/
     max-height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 #link-rotate-project{
     position: absolute;
-    top: 5vw;
-    left: 28vw;
+    top: 135vw;
+    left: 16vw;
     transform: rotate(6deg);
-	width: 130px;
+    width: 381px;
+    text-align: center;
+    font-size: 5rem;
 }
 #rotate-adminka{
     position: absolute;
     top: 5vw;
-    left: 91vw;
+    left: 76vw;
     transform: rotate(-18deg);
-	width: 130px;
-}
-#project-link{
+	width: 175px;
+    text-align: center;
     font-size: 3rem;
 }
 #link-rotate-book{
     position: absolute;
-    top: 19.9vw;
-    left: 75.2vw;
+    top: 27vw;
+    left: 0vw;
     transform: rotate(-12deg);
-	width: 130px;
-}
-
-#book-link{
-    font-size: 2.4rem;
+    width: 381px;
+    text-align: center;
+    font-size: 5rem;
 }
 #link-rotate-blog{
     position: absolute;
-    top: 29vw;
-    left: 10vw;
+    top: 63vw;
+    left: 14vw;
     transform: rotate(-1deg);
-	width: 130px;
-}
-
-#blog-link{
-    font-size: 2.7rem;
-}
-#blog-link:hover{
-    color: #4e312b;
+	width: 381px;
+    text-align: center;
+    font-size: 5rem;
 }
 #link-rotate-q{
     position: absolute;
-    top: 27vw;
-    left: 49vw;
+    top: 4vw;
+    left: 0vw;
     /* transform: rotate(-1deg); */
+    text-align: center;
     width: 130px;
+    font-size: 3rem;
 }
-
-#q-link{
-    font-size: 2.7rem;
-}
-
 #link-rotate-verse{
     position: absolute;
-    top: 40.9vw;
-    left: 90vw;
+    top: 106vw;
+    left: 25vw;
     transform: rotate(7deg);
-    width: 130px;
+    width: 381px;
+    text-align: center;
+    font-size: 5rem;
 }
 
-#verse-link{
-    font-size: 2.7rem;
-}
-#verse-link:hover{
-    color: #4e312b;
-}
 #rotate-username{
     position: absolute;
-    top: 8.5vw;
-    left: 63vw;
-    transform: rotate(-18deg);
-    width: 30vw;
-    font-size: 2.1rem;
+    top: 6.5vw;
+    left: 33vw;
+    /*transform: rotate(-18deg);*/
+    /*width: 30vw;*/
+    font-size: 2rem;
 }
-/*///////////////////////////////////////////////////////////*/
+/*###########################################*/
 .hidden{
     display: none;
 }
 .hidden_home_bloc{
-    position: relative;
-    top: 23vh;
-    left: 38vw;
-    width: 440px;
-    height: 590px;
+       position: relative;
+    top: 2vh;
+    /* left: 4vw; */
+    /* width: 100vw; */
+    height: 97vh;
     background-color: rgba(10,10,10, 0.94);
     border: 4px solid darkorange;
     overflow-y: auto;
@@ -153,7 +136,7 @@ body{
 .div_link{
     display: block;
     position: fixed;
-    width: 432px;
+    width: 98vw;
     height: 3rem;
     overflow: hidden;
     font-size: 2rem;
@@ -166,12 +149,9 @@ body{
     position: relative;
     top: 3rem;
 }
-.div_link:hover{
-    background-color: black;
-}
 .div_link_list{
     display: block;
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 1rem;
     color: orange;
     border-bottom: 2px solid darkorange;
@@ -186,7 +166,9 @@ body{
 }
 /*////////////// SCROLL /////////////////////*/
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 0px;
+    overflow: visible;
+    height: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -214,10 +196,10 @@ body{
 }
 .verse_inner_block{
     position: relative;
-    top: 7vh;
-    left: 20vw;
-    width: 60vw;
-    height: 82vh;
+    top: 2vh;
+    left: 2vw;
+    width: 96vw;
+    height: 96vh;
     background-color: rgba(10,10,10, 0.94);
     border: 4px solid darkorange;
     overflow-y: auto;
@@ -226,21 +208,129 @@ body{
 #close-verse{
     position: relative;
     left: -1vw;
-
+    font-size: 2.5rem;
+    z-index: 2;
 }
 #div-link-verse{
     padding-left: 2rem;
-    width: 59.6vw;
+    width: 94vw;
     text-align: unset;
-}
 
+}
 #div-verse-description{
     position: relative;
     top: 6vh;
     padding: 2vw;
 }
-/*################ navi ##############*/
+/*############### DIARY ###########################*/
+#div-link-diary{
+    padding-left: 2rem;
+    width: 95vw;
+    text-align: unset;
+    height: 3rem;
+}
+.diary_inner_block{
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    width: 97vw;
+    height: 97vh;
+    background-color: rgba(10,10,10, 0.94);
+    border: 4px solid darkorange;
+    overflow: hidden;
+}
+#diary-list-block{
+    position: absolute;
+    display: -webkit-box;
+    top: 3rem;
+    left: 0rem;
+    /* padding: 10px; */
+    height: 10vh;
+    width: 95vw;
+    border-bottom: 4px solid darkorange;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 2;
+    flex: none !important;
+    max-width: none !important;
+}
+#diary-text-block{
+    position: relative;
+    top: 10rem;
+    left: -1rem;
+    padding-left: 35px;
+    height: 71vh;
+    overflow-y: auto;
+    flex: none !important;
+    max-width: none !important;
+}
+#diary-title-link{
+    border-right: 2px solid darkorange;
+    border-bottom: none;
+    width: 62vw !important;
+    overflow-y: hidden;
+}
+/*#################### LOGIN #############################*/
+.login_inner_block{
+    position: relative;
+    top: 25vh;
+    left: 14vw;
+    width: 70vw;
+    height: 40vh;
+    background-color: rgba(10,10,10, 0.94);
+    border: 4px solid darkorange;
+}
+#div-link-login{
+    padding-left: 2rem;
+    width: 68vw;
+    height: 3rem;
+    text-align: unset;
+}
+#div-link-logon{
+    padding-left: 2rem;
+    width: 78vw;
+    height: 3rem;
+    text-align: unset;
+}
+#div-login-description{
+    position: relative;
+    top: 5vh;
+    padding: 3vw;
+}
+#btn-log-in{
+    position: absolute;
+    top: 25vh;
+    left: 29vw;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+#id_username{
+    font-size: 2.6rem;
+    height:5vh !important;
+}
+#id_password, #id_password1, #id_password2{
+    font-size: 2.6rem;
+    height:5vh !important;
+}
+#link-log-on{
+    position: absolute;
+    top: 17rem;
+    left: 5vw;
+}
+#logon-inner-block{
+    top: 7vh;
+    left: 7vw;
+    height: 57vh;
+    width: 80vw;
+}
+#err-text{
+    font-size: 1.2rem;
+    color: red;
+}
+/*###################### LIST_BOOK #####################*/
 .navi{
+    position: relative;
+    top: -4vh;
+    left: 4vw;
     display: flex;
     width: 90%;
     height: 3rem;
@@ -276,94 +366,5 @@ body{
 }
 
 .navi_chapter{
-    width: 3vw;
-}
-/*///////////////////////////////////////*/
-.login_inner_block{
-    position: relative;
-    top: 31vh;
-    left: 34vw;
-    width: 30vw;
-    height: 35vh;
-    background-color: rgba(10,10,10, 0.94);
-    border: 4px solid darkorange;
-    /*overflow-y: auto;*/
-}
-#div-link-login{
-    padding-left: 2rem;
-    width: 29.6vw;
-    height: 2rem;
-    text-align: unset;
-}
-#div-link-logon{
-    padding-left: 2rem;
-    width: 29.6vw;
-    height: 2rem;
-    text-align: unset;
-}
-#div-login-description{
-    padding: 2vw;
-}
-#btn-log-in{
-    position: absolute;
-    top: 15rem;
-    left: 18vw;
     width: 10vw;
-    height: 3rem;
-}
-#btn-log-on{
-    position: absolute;
-    top: 24rem;
-    left: 17.4vw;
-    width: 10vw;
-    height: 3rem;
-}
-#link-log-on{
-    position: absolute;
-    top: 18.4rem;
-    left: 18vw;
-}
-#btn_reg_relog{
-    position: relative;
-    top: 1vw;
-}
-#err-login{
-    text-align: center;
-}
-#logon-inner-block{
-    height: 50vh;
-}
-/*/////////////////////// DIARY  //////////////////////////////////////*/
-#div-link-diary{
-    padding-left: 2rem;
-    width: 73.6vw;
-    text-align: unset;
-    height: 2rem;
-}
-.diary_inner_block{
-    position: relative;
-    top: 7vh;
-    left: 12vw;
-    width: 74vw;
-    height: 82vh;
-    background-color: rgba(10,10,10, 0.94);
-    border: 4px solid darkorange;
-    overflow: hidden;
-}
-#diary-list-block{
-    position: relative;
-    top: 2rem;
-    padding: 10px;
-    height: 78vh;
-    border-right: 4px solid darkorange;
-    overflow-y: auto;
-    z-index: 2;
-}
-#diary-text-block{
-    position: relative;
-    top: 2rem;
-    left: -1rem;
-    padding-left: 35px;
-    height: 78vh;
-    overflow-y: auto;
 }

@@ -7,7 +7,7 @@
         <img id="home-img" src="{% static 'ahome/img/home_img.jpg' %}" />
         {% if user.username %}
 {#             <div id="rotate-username" class="caveat"><a href="" class="link">Приветствую Вас {{ user.username }}</a> </div>#}
-             <div id="rotate-username" class="caveat"> Приветствую Вас {{ user.username }} </div>
+             <div id="rotate-username" class="caveat"> Приветствую, {{ user.username }} </div>
             {% if user.is_superuser %}
                 <a id="rotate-adminka" class="link" href="/admin">adminka</a>
             {% endif %}
@@ -27,8 +27,8 @@
         <a class="link div_link" href="" id="project-link-hide">Отмена</a>
         <div class="list_content">
 {#            {% for elem in verse %}#}
-                <a class="div_link_list caveat" href="http://127.0.0.1:8000">Chip Motors</a>
-                <a class="div_link_list caveat" href="http://127.0.0.1:8020">LisSolution</a>
+                <a class="div_link_list caveat" href="http://192.168.0.200:8010">Chip Motors</a>
+                <a class="div_link_list caveat" href="http://lisai">LisSolution</a>
 {#            {% endfor %}#}
         </div>
     </div>
