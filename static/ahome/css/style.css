@@ -333,6 +333,9 @@ body{
 #logon-inner-block{
     height: 50vh;
 }
+#text-logout{
+    font-size: 2rem;
+}
 /*/////////////////////// DIARY  //////////////////////////////////////*/
 #div-link-diary{
     padding-left: 2rem;

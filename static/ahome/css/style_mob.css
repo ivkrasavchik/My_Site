@@ -58,16 +58,16 @@ body{
 }
 #link-rotate-project{
     position: absolute;
-    top: 135vw;
+    top: 79vh;
     left: 16vw;
     transform: rotate(6deg);
     width: 381px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 #rotate-adminka{
     position: absolute;
-    top: 5vw;
+    top: 5vh;
     left: 76vw;
     transform: rotate(-18deg);
 	width: 175px;
@@ -76,48 +76,45 @@ body{
 }
 #link-rotate-book{
     position: absolute;
-    top: 27vw;
-    left: 0vw;
+    top: 20vh;
+    left: 9vw;
     transform: rotate(-12deg);
     width: 381px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 #link-rotate-blog{
     position: absolute;
-    top: 63vw;
-    left: 14vw;
+    top: 39vh;
+    left: 45vw;
     transform: rotate(-1deg);
-	width: 381px;
+    width: 381px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 #link-rotate-q{
     position: absolute;
-    top: 4vw;
-    left: 0vw;
-    /* transform: rotate(-1deg); */
+    top: 1vh;
+    left: 2vw;
     text-align: center;
     width: 130px;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 #link-rotate-verse{
     position: absolute;
-    top: 106vw;
+    top: 59vh;
     left: 25vw;
     transform: rotate(7deg);
     width: 381px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 #rotate-username{
     position: absolute;
-    top: 6.5vw;
-    left: 33vw;
-    /*transform: rotate(-18deg);*/
-    /*width: 30vw;*/
-    font-size: 2rem;
+    top: 3vh;
+    left: 25vw;
+    font-size: 4rem;
 }
 /*###########################################*/
 .hidden{
@@ -208,7 +205,7 @@ body{
 #close-verse{
     position: relative;
     left: -1vw;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     z-index: 2;
 }
 #div-link-verse{
@@ -283,7 +280,7 @@ body{
 #div-link-login{
     padding-left: 2rem;
     width: 68vw;
-    height: 3rem;
+    height: 5rem;
     text-align: unset;
 }
 #div-link-logon{
@@ -325,6 +322,9 @@ body{
 #err-text{
     font-size: 1.2rem;
     color: red;
+}
+#text-logout{
+    font-size: 3.5rem;
 }
 /*###################### LIST_BOOK #####################*/
 .navi{
