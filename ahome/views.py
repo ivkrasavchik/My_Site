@@ -8,6 +8,7 @@ from ahome.forms import LoginForm, UserCreation
 from ahome.models import Verse, Book, Chapter, Diary
 
 
+
 def home(request):
     args = dict()
     met = request.META['HTTP_USER_AGENT']

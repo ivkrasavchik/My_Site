@@ -1,4 +1,5 @@
 
+
 jQuery(document).ready(function ($) {
     $('#project-link').click(show_projects);
     $('#project-link-hide').click(hide_projects);
