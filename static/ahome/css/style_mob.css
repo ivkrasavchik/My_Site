@@ -1,16 +1,31 @@
 body{
     margin: 0;
 }
+.h5, h5 {
+    font-size: 2rem !important;
+}
+.h3, h3 {
+    font-size: 2.6rem !important;
+}
 
 .caveat{
     font-family: 'Caveat', cursive;
+}
+.close {
+    /*float: right ;*/
+    /*font-size: 1.5rem;*/
+    /*font-weight: 700;*/
+    /*line-height: 1;*/
+    color: var(--orange)!important;
+    text-shadow: 0 6px 0px #ffc107 !important;
+    opacity: .9 !important;
 }
 .author_text{
     word-break: break-all;
     color: #B29567;
     white-space: pre-wrap;
     padding: 1vw;
-    font-size: 1.3rem
+    font-size: 2.8rem
 }
 #home-img{
     display: none;
@@ -134,9 +149,9 @@ body{
     display: block;
     position: fixed;
     width: 98vw;
-    height: 3rem;
+    height: 7rem;
     overflow: hidden;
-    font-size: 2rem;
+    font-size: 4rem;
     background-color: rgba(10,10,10, 0.85);
     border-bottom: 4px solid darkorange;
     text-align: center;
@@ -144,11 +159,11 @@ body{
 }
 .list_content{
     position: relative;
-    top: 3rem;
+    top: 7rem;
 }
 .div_link_list{
     display: block;
-    font-size: 1.3rem;
+    font-size: 4rem;
     padding: 1rem;
     color: orange;
     border-bottom: 2px solid darkorange;
@@ -196,7 +211,7 @@ body{
     top: 2vh;
     left: 2vw;
     width: 96vw;
-    height: 96vh;
+    height: 90vh;
     background-color: rgba(10,10,10, 0.94);
     border: 4px solid darkorange;
     overflow-y: auto;
@@ -225,14 +240,14 @@ body{
     padding-left: 2rem;
     width: 95vw;
     text-align: unset;
-    height: 3rem;
+    /*height: 3rem;*/
 }
 .diary_inner_block{
     position: relative;
     top: 2vh;
     left: 2vw;
     width: 97vw;
-    height: 97vh;
+    height: 90vh;
     background-color: rgba(10,10,10, 0.94);
     border: 4px solid darkorange;
     overflow: hidden;
@@ -240,7 +255,7 @@ body{
 #diary-list-block{
     position: absolute;
     display: -webkit-box;
-    top: 3rem;
+    top: 7rem;
     left: 0rem;
     /* padding: 10px; */
     height: 10vh;
@@ -254,7 +269,7 @@ body{
 }
 #diary-text-block{
     position: relative;
-    top: 10rem;
+    top: 20rem;
     left: -1rem;
     padding-left: 35px;
     height: 71vh;
@@ -267,6 +282,7 @@ body{
     border-bottom: none;
     width: 62vw !important;
     overflow-y: hidden;
+    font-size: 2.5rem;
 }
 /*#################### LOGIN #############################*/
 .login_inner_block{
@@ -331,15 +347,16 @@ body{
 .navi{
     position: relative;
     top: -4vh;
-    left: 4vw;
+    /*left: 4vw;*/
     display: flex;
     width: 90%;
-    height: 3rem;
+    height: 7rem;
     overflow: hidden;
 }
 #link-chapter-previous{
     position: relative;
-    top: 7px;
+    top: 1vh;
+    font-size: 3.7rem;
     /*left: 0px;*/
 }
 #link-chapter-list{
@@ -348,6 +365,9 @@ body{
     /*left: 20px;*/
 }
 #link-chapter-list-h3{
+    position: relative;
+    top: 1.6vh;
+    left: 4vw;
     max-width: 46vw;
     overflow: hidden;
     white-space: nowrap;
@@ -355,11 +375,14 @@ body{
 }
 #link-chapter-Next{
     position: relative;
-    top: 7px;
-    left: 20px;
+    top: 1vh;
+    left: 6vw;
+    font-size: 3.7rem;
 }
 #list-chapter{
-    width: 350px;
+    position: relative;
+    width: 77vw;
+    top: 1vh;
     overflow: hidden;
     padding-left: 10px;
     white-space: nowrap;
