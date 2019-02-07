@@ -1,6 +1,8 @@
 body{
     margin: 0;
 }
+#sidebar {display: none;}
+
 .h5, h5 {
     font-size: 2rem !important;
 }

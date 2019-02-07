@@ -8,7 +8,6 @@ from ahome.forms import LoginForm, UserCreation
 from ahome.models import Verse, Book, Chapter, Diary
 
 
-
 def home(request):
     args = dict()
     met = request.META['HTTP_USER_AGENT']
@@ -35,6 +34,7 @@ def list_book(request):
 
 def chapter(request, book_id):
     args = dict()
+    args.update(csrf(request))
     args['bk'] = Book.objects.get(id=book_id)
     args['chap'] = Chapter.objects.filter(book=book_id)
     return render(request, 'ahome/chapter.html', args)

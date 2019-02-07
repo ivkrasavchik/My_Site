@@ -22,7 +22,7 @@
                 <div class="col-4" id="diary-list-block">
                     {% csrf_token %}
                     {% for elem in dir %}
-                        <a class="div_link_list caveat" id="diary-title-link" href="javascript:"
+                        <a class="div_link_list caveat diary_script_link " id="diary-title-link" href="javascript:"
                                             data-id_diary="{{ elem.id }}"
                                                             >{{ elem.created }} | {{ elem.short_description }}</a>
                     {% endfor %}

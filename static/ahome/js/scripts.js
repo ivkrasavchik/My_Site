@@ -5,8 +5,7 @@ jQuery(document).ready(function ($) {
     $('#project-link-hide').click(hide_projects);
     $('#verse-link').click(show_verse);
     $('#verse-link-hide').click(hide_verse);
-    $('.div_link_list').click(diary_title_link);
-    
+    $('.diary_script_link').click(diary_title_link);
     
     
     function show_projects() {
