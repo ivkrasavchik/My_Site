@@ -13,4 +13,5 @@ urlpatterns = [
     path('log_on', views.log_on, name="log_on"),
     path('diary', views.diary, name="diary"),
     path('note_content', views.note_content, name="note_content"),
+    path('forum', views.forum, name="forum"),
 ]

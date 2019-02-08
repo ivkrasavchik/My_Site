@@ -131,3 +131,8 @@ def note_content(request):
             return HttpResponse(description)
         return JsonResponse(False, safe=False)
 
+
+def forum(request):
+    args = dict()
+    args['text'] = "В курилке пока ремонт"
+    return render(request, 'ahome/forum.html', args)

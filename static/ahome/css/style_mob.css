@@ -102,10 +102,10 @@ body{
 }
 #link-rotate-blog{
     position: absolute;
-    top: 39vh;
-    left: 45vw;
+    top: 38vh;
+    left: 41vw;
     transform: rotate(-1deg);
-    width: 381px;
+    width: 530px;
     text-align: center;
     font-size: 7rem;
 }
@@ -119,7 +119,7 @@ body{
 }
 #link-rotate-verse{
     position: absolute;
-    top: 59vh;
+    top: 56vh;
     left: 25vw;
     transform: rotate(7deg);
     width: 381px;
@@ -132,6 +132,15 @@ body{
     top: 3vh;
     left: 25vw;
     font-size: 4rem;
+}
+#link-rotate-forum{
+    position: absolute;
+    top: 65vh;
+    left: 56vw;
+    transform: rotate(-62deg);
+    width: 381px;
+    text-align: center;
+    font-size: 7rem;
 }
 /*###########################################*/
 .hidden{
@@ -286,6 +295,12 @@ body{
     overflow-y: hidden;
     font-size: 2.5rem;
 }
+#btn-diary-forum{
+    position: absolute;
+    top: 93vh;
+    left: 23vw;
+    font-size: 38pt;
+}
 /*#################### LOGIN #############################*/
 .login_inner_block{
     position: relative;
@@ -393,4 +408,20 @@ body{
 
 .navi_chapter{
     width: 10vw;
+}
+/*##################### FORUM ############################*/
+.forum_inner_block{
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    width: 97vw;
+    height: 90vh;
+    background-color: rgba(10,10,10, 0.94);
+    border: 4px solid darkorange;
+    overflow: hidden;
+}
+#div-link-forum{
+    padding-left: 2rem;
+    width: 95vw;
+    text-align: unset;
 }

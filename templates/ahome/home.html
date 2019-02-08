@@ -11,15 +11,18 @@
             {% if user.is_superuser %}
                 <a id="rotate-adminka" class="link" href="/admin">adminka</a>
             {% endif %}
-
+        {% else %}
+            <div id="rotate-username" class="caveat"> Приветствую, Незнакомец </div>
         {% endif %}
-        {% if user.is_staff %}
+{#        {% if user.is_staff %}#}
         <div id="link-rotate-project" class="caveat"> <a class="link" id="project-link" href="javascript:">Проекты</a> </div>
-        {% endif %}
-        <div id="link-rotate-book" class="caveat"> <a class="link " id="book-link" href="{% url 'list_book'%}">Рукописи</a>        </div>
-        <div id="link-rotate-blog" class="caveat"><a class="link " id="blog-link" href="{% url 'diary' %}">Дневник</a>          </div>
-        <div id="link-rotate-q"><a class="link " id="q-link" title="Авторизация" href="{% url 'log_in' %}">?</a>          </div>
-        <div id="link-rotate-verse" class="caveat"><a class="link " id="verse-link" href="javascript:">Verse</a>          </div>
+{#        {% endif %}#}
+        <div id="link-rotate-book" class="caveat"> <a class="link " id="book-link" href="{% url 'list_book'%}">Статьи</a></div>
+        <div id="link-rotate-blog" class="caveat"><a class="link " id="blog-link" href="{% url 'diary' %}">Мысли в слух</a></div>
+        <div id="link-rotate-q"><a class="link " id="q-link" title="Авторизация" href="{% url 'log_in' %}">?</a></div>
+        <div id="link-rotate-verse" class="caveat"><a class="link " id="verse-link" href="javascript:">Verse</a></div>
+        <div id="link-rotate-forum" class="caveat"><a class="link " id="forum-link" href="{% url 'forum' %}">Курилка</a></div>
+
     </div>
 
     {#///  Project  ///#}

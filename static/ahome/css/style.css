@@ -93,7 +93,7 @@ body{
     top: 29vw;
     left: 10vw;
     transform: rotate(-1deg);
-	width: 130px;
+	width: 210px;
 }
 
 #blog-link{
@@ -136,6 +136,19 @@ body{
     width: 30vw;
     font-size: 2.1rem;
 }
+#link-rotate-forum{
+        position: absolute;
+    top: 42.2vw;
+    left: 18vw;
+    transform: rotate(-2deg);
+    width: 130px;
+}
+#forum-link{
+    font-size: 2.7rem;
+}
+/*#forum-link:hover{*/
+    /*color: #4e312b;*/
+/*}*/
 /*///////////////////////////////////////////////////////////*/
 .hidden{
     display: none;
@@ -370,4 +383,26 @@ body{
     padding-left: 35px;
     height: 78vh;
     overflow-y: auto;
+}
+#btn-diary-forum{
+    position: absolute;
+    top: 91vh;
+    left: 77vw;
+}
+/*##################### FORUM ############################*/
+.forum_inner_block{
+    position: relative;
+    top: 7vh;
+    left: 12vw;
+    width: 74vw;
+    height: 82vh;
+    background-color: rgba(10,10,10, 0.94);
+    border: 4px solid darkorange;
+    overflow: hidden;
+}
+#div-link-forum{
+    padding-left: 2rem;
+    width: 73.6vw;
+    text-align: unset;
+    height: 2rem;
 }

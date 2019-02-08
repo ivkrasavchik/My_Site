@@ -1,0 +1,14 @@
+{% extends 'ahome/home.html' %}
+{% load static %}
+
+{% block verse %}
+    <div class="verse_background">
+        <div class="forum_inner_block">
+            <div class="div_link" id="div-link-forum">
+                <a class="link caveat close" id="close-verse" href="/">Close</a>
+{#                <a class="link div_link" href="" id="book-link-hide">Отмена</a>#}
+            </div>
+            <h3 style="position: relative; top: 7vh">{{ text }}</h3>
+        </div>
+    </div>
+{% endblock %}
