@@ -9,7 +9,9 @@ body{
 .h3, h3 {
     font-size: 2.6rem !important;
 }
-
+.h2, h2 {
+    font-size: 4rem !important;
+}
 .caveat{
     font-family: 'Caveat', cursive;
 }

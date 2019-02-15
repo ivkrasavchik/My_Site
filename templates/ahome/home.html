@@ -12,7 +12,7 @@
                 <a id="rotate-adminka" class="link" href="/admin">adminka</a>
             {% endif %}
         {% else %}
-            <div id="rotate-username" class="caveat"> Приветствую, Незнакомец </div>
+            <div id="rotate-username" class="caveat"> Приветствую, Незнакомец! </div>
         {% endif %}
 {#        {% if user.is_staff %}#}
         <div id="link-rotate-project" class="caveat"> <a class="link" id="project-link" href="javascript:">Проекты</a> </div>
@@ -20,7 +20,7 @@
         <div id="link-rotate-book" class="caveat"> <a class="link " id="book-link" href="{% url 'list_book'%}">Статьи</a></div>
         <div id="link-rotate-blog" class="caveat"><a class="link " id="blog-link" href="{% url 'diary' %}">Мысли в слух</a></div>
         <div id="link-rotate-q"><a class="link " id="q-link" title="Авторизация" href="{% url 'log_in' %}">?</a></div>
-        <div id="link-rotate-verse" class="caveat"><a class="link " id="verse-link" href="javascript:">Verse</a></div>
+{#        <div id="link-rotate-verse" class="caveat"><a class="link " id="verse-link" href="javascript:">Verse</a></div>#}
         <div id="link-rotate-forum" class="caveat"><a class="link " id="forum-link" href="{% url 'forum' %}">Курилка</a></div>
 
     </div>
@@ -30,8 +30,8 @@
         <a class="link div_link" href="" id="project-link-hide">Отмена</a>
         <div class="list_content">
 {#            {% for elem in verse %}#}
-                <a class="div_link_list caveat" href="http://87.252.238.50:8010">Chip Motors</a>
-                <a class="div_link_list caveat" href="http://87.252.238.50:8020">LisSolution</a>
+                <a class="div_link_list caveat" href="http://86.57.248.131:8010">Chip Motors</a>
+{#                <a class="div_link_list caveat" href="http://86.57.248.131:8020">LisSolution</a>#}
 {#            {% endfor %}#}
         </div>
     </div>
