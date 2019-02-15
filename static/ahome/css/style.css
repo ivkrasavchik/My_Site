@@ -5,7 +5,8 @@ body{
     font-family: 'Caveat', cursive;
 }
 .author_text{
-    word-break: break-all;
+    /*word-break: break-all;*/
+    word-wrap: break-word;
     color: #B29567;
     white-space: pre-wrap;
     padding: 1vw;
