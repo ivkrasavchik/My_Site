@@ -30,20 +30,20 @@
         <a class="link div_link" href="" id="project-link-hide">Отмена</a>
         <div class="list_content">
 {#            {% for elem in verse %}#}
-                <a class="div_link_list caveat" href="http://86.57.248.131:8010">Chip Motors</a>
-{#                <a class="div_link_list caveat" href="http://86.57.248.131:8020">LisSolution</a>#}
+{#                <a class="div_link_list caveat" href="http://86.57.248.131:8010">Chip Motors</a>#}
+                <a class="div_link_list caveat" href="http://86.57.248.131:8020">LisSolution</a>
 {#            {% endfor %}#}
         </div>
     </div>
     {#///  Verse  ///#}
-    <div class="hidden hidden_home_bloc" id="verse-list">
-        <a class="link div_link" href="" id="verse-link-hide">Отмена</a>
-        <div class="list_content">
-            {% for elem in verse %}
-                <a class="div_link_list caveat" href="{% url 'verse' elem.id %}">{{ elem.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
+{#    <div class="hidden hidden_home_bloc" id="verse-list">#}
+{#        <a class="link div_link" href="" id="verse-link-hide">Отмена</a>#}
+{#        <div class="list_content">#}
+{#            {% for elem in verse %}#}
+{#                <a class="div_link_list caveat" href="{% url 'verse' elem.id %}">{{ elem.name }}</a>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
     {% block verse %}
     {% endblock verse %}
 
