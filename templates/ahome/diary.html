@@ -24,7 +24,8 @@
                     {% for elem in dir %}
                         <a class="div_link_list caveat diary_script_link " id="diary-title-link" href="javascript:"
                                             data-id_diary="{{ elem.id }}"
-                                                            >{{ elem.created }} | {{ elem.short_description }}</a>
+                                                            >{{ elem.created }} | {{ elem.short_description }} </a>
+{#                        <div class="static_diary">{{ elem.static }}</div>#}
                     {% endfor %}
                 </div>
                 <div class="col-8" id="diary-text-block">

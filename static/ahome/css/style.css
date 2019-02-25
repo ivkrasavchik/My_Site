@@ -390,6 +390,18 @@ body{
     top: 91vh;
     left: 77vw;
 }
+.static_diary{
+    position: relative;
+    /*left: 13vw;*/
+    top: -3vh;
+    padding-left: 10px;
+}
+.book_static{
+    position: relative;
+    /*left: 13vw;*/
+    top: -3vh;
+    padding-left: 10px;
+}
 /*##################### FORUM ############################*/
 .forum_inner_block{
     position: relative;

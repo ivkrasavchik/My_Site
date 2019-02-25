@@ -11,6 +11,7 @@
                 <div class="list_content">
                     {% for elem in bk %}
                         <a class="div_link_list caveat" href="{% url 'chapter' elem.id %}">{{ elem.name }}</a>
+{#                        <div class="book_static">{{ elem.static }}</div>#}
                     {% endfor %}
                 </div>
         </div>

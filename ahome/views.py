@@ -12,11 +12,10 @@ def home(request):
     args = dict()
     met = request.META['HTTP_USER_AGENT']
 
-    print(type(met), met)
+    # print(type(met), met, request.path, request.path_info)
     if auth.get_user(request).username != AnonymousUser.username:
         args['user'] = auth.get_user(request)
     args['verse'] = Verse.objects.all()
-    # args['book'] = Book.objects.all()
     return render(request, 'ahome/home.html', args)
 
 
@@ -28,7 +27,7 @@ def verse(request, verse_id):
 
 def list_book(request):
     args = dict()
-    args['bk'] = Book.objects.all()
+    args['bk'] = Book.objects.all().order_by('name')
     return render(request, 'ahome/list_book.html', args)
 
 
@@ -36,6 +35,8 @@ def chapter(request, book_id):
     args = dict()
     args.update(csrf(request))
     args['bk'] = Book.objects.get(id=book_id)
+    args['bk'].static += 1
+    args['bk'].save(update_fields=['static'])
     args['chap'] = Chapter.objects.filter(book=book_id)
     return render(request, 'ahome/chapter.html', args)
 
@@ -125,7 +126,10 @@ def note_content(request):
     if request.POST:
         if request.POST.get('diary_id'):
             diary = request.POST.get('diary_id')
-            description = Diary.objects.get(id=diary).description
+            diar = Diary.objects.get(id=diary)
+            description = diar.description
+            diar.static += 1
+            diar.save(update_fields=['static'])
             # json_orders_user = json.dumps(list(description), cls=DjangoJSONEncoder)
             # return JsonResponse(json_orders_user, safe=False)
             return HttpResponse(description)
